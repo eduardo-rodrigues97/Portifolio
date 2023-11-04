@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="./assets/css/styleContact.css">
+</head>
+<body>
+    <header class="header">
+        <a href="./index.html" class="link-home-logo"><p class="logo">Eduardo.</p></a>
+        <nav class="navbar">
+            <a href="./index.html">Home</a>
+            <a href="./estudo.html">Estudo</a>
+            <a href="./portifolio.html">Portifolio</a>
+            <a href="./contact.html"  class="active-bnt">Contato</a>
+        </nav>
+    </header>
+    <section class="contact">
+        <div class="form-contact">
+            <h1>Formulari de contato</h1>
+            <p>Preencha o formulario para entrar em contato.</p>
+            <hr>
+            <form name="formcontact" method="post" action="#">
+                <fieldset class="ident">
+                    <div>
+                        <label>Nome*:</label>
+                        <input type="text" name="nome" id="nome" required>
+                    </div>
+                    <div>
+                        <label>Sobrenome:</label>
+                        <input type="text" name="sobrenome" id="sobrenome" >
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <div>
+                        <label>Telefone*:</label>
+                        <input type="number" name="telefone" id="telefone" min="0" required>
+                    </div>
+                    <div>
+                        <label>E-mail*:</label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <div>
+                        <label>Motivo do contato*:</label>
+                        <textarea type="text" name="mcontato" id="mcontato" required> </textarea>
+                    </div>
+                </fieldset>
+                <button type="submit">Enviar</button>
+
+            </form>
+        </div>
+        
+    </section>
+</body>
+</html>
